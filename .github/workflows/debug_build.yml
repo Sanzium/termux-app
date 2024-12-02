@@ -1,16 +1,15 @@
 name: Build
 
 on:
-  workflow_dispatch:
-    push:
-      branches:
-        - master
-        - 'github-releases/**'
-        - pr-test
-    pull_request:
-      branches:
-        - master
-        - pr-test
+  push:
+    branches:
+      - master
+      - 'github-releases/**'
+      - pr-test
+  pull_request:
+    branches:
+      - master
+      - pr-test
 
 jobs:
   build:
