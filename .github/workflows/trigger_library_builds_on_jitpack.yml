@@ -1,7 +1,7 @@
 name: Trigger Termux Library Builds on Jitpack
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
   release:
     types:
       - published
