@@ -1,14 +1,15 @@
 name: "Validate Gradle Wrapper"
 
 on:
-  push:
-    branches:
-      - master
-      - pr-test
-  pull_request:
-    branches:
-      - master
-      - pr-test
+  workflow_dispatch:
+    push:
+      branches:
+        - master
+        - pr-test
+    pull_request:
+      branches:
+        - master
+        - pr-test
 
 jobs:
   validation:
